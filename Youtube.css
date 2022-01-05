@@ -3,20 +3,20 @@
     margin: 0;
     padding-left: 0;
   }
-  
+
   *:focus {
     outline: none;
   }
-  
+
   body {
     position: relative;
     background: whitesmoke;
     font-family: "roboto", sans-serif;
   }
-  
+
   .navbar {
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
     height: 60px;
     background: rgb(255, 253, 253);
@@ -30,30 +30,30 @@
     height: 10px;
     cursor: pointer;
     position: relative;
-    
+
   }
-  
+
   .toggle-btn span {
     width: 100%;
     height: 2px;
     top: 45%;
     background: #8f8b8b;
-    transform: translateY((-50%));
     position: absolute;
+    transform: translateY((-45%));
   }
-  
+
   .toggle-btn span:nth-child(1) {
     top: 0;
   }
   .toggle-btn span:nth-child(3) {
     top: 100%;
   }
-  
+
   .logo {
     height: 30px;
     margin: 0px 48px 0;
   }
- 
+
   .search-bar {
     width: 84%;
     height: 100%;
@@ -61,7 +61,7 @@
     font-size: 16px;
     text-transform: capitalize;
   }
-  
+
 
   .search-box {
     position: relative;
@@ -70,7 +70,7 @@
     width: 50%;
     height: 35px;
   }
-  
+
   .search-btn {
     width: 15%;
     height: 100%;
@@ -82,7 +82,7 @@
   .search-btn img {
     height: 100%;
   }
-  
+
   .user-options {
     height: 35px;
     display: flex;
@@ -101,7 +101,7 @@
     overflow: hidden;
     border-radius: 50%;
   }
-  
+
   .user-dp img {
     object-fit: cover;
     width: 100%;
@@ -113,7 +113,7 @@
       margin-left: 7px;
 
   }
-  
+
 
   hr{
     display: block;
@@ -136,7 +136,7 @@
     background: rgb(243, 232, 232);
     padding-right: 10px;
   }
-  
+
   .links {
     color: #252424;
     font-size: 14px;
@@ -148,22 +148,22 @@
     display: flex;
     align-items: center;
     text-transform: capitalize;
-  
+
   }
-  
+
   .links img {
     height: 25px;
     margin-right: 20px;
   }
-  
+
   .links:hover,
   .links.active {
     background: rgba(0, 0, 0, 0.1);
     width: 104%;
   }
-  
+
   /* sidebar css */
-  
+
   /* filters */
   .filters {
     position: fixed;
@@ -173,18 +173,18 @@
     height: 60px;
     background: rgb(250, 248, 248);
     border-top: 1px solid #dfdada;
+    border-bottom: 1px solid #e0dbdb;
     padding: 0 20px;
-    align-items: center;
-    border-bottom: 1px solid #f1ebeb;
     display: flex;
+    align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
   }
-  
+
   .filters::-webkit-scrollbar {
     display: none;
   }
-  
+
   .fliter-options {
     flex: 0 0 auto;
     padding: 10px 20px;
@@ -197,12 +197,12 @@
     font-size: 15px;
     cursor: pointer;
   }
-  
+
   .fliter-options.active {
     color: rgb(231, 229, 229);
     background: #141414;
   }
-  
+
   #videosResults{
     width: calc(100% - 250px);
     margin-top: 120px;
@@ -213,7 +213,7 @@
     grid-gap: 25px;
   }
 
- 
+
 
   #hoverDiv:hover{
     background-color: white;
@@ -222,10 +222,10 @@
     transform: scale(1.1);
     cursor: pointer;
   }
-  
 
- 
-  
+
+
+
   button:hover{
       background-color: #242424;
       color: white;
@@ -235,7 +235,7 @@
 background-color: turquoise;
   }
 
-  
+
 
 
   .content {
@@ -245,7 +245,7 @@ background-color: turquoise;
     padding: 10px;
     display: flex;
   }
-  
+
   .channel-icon {
     width: 40px;
     height: 40px;
@@ -254,11 +254,11 @@ background-color: turquoise;
   }
 
 
-  
+
 
   #flex{
     display: flex;
-    
+
   }
 
 
@@ -269,7 +269,7 @@ background-color: turquoise;
     margin-left: 4%;
     color: rgb(10, 10, 10);
 
-  
+
   }
   #span{
     font-size: 10px;
@@ -280,9 +280,9 @@ background-color: turquoise;
 
   @media only screen and (min-width: 375px) and (max-width: 768px) {
     #videosResults{
-  
+
       grid-template-columns: repeat(2, 1fr);
-     
+
     }
   }
 
@@ -303,7 +303,7 @@ background-color: turquoise;
   .user-options{
     display: none;
   }
- 
+
 
 
   }
