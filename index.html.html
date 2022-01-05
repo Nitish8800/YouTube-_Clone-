@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Youtube.css" />
+  </head>
+  <body>
+    <!-- <-------- starting of navbar ------------>
+    -->
+    <nav class="navbar">
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="Youtube.html">
+        <img src="logoAndImages/logo.png" alt="logo" class="logo"
+      /></a>
+
+      <div class="search-box">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="&nbsp;&nbsp;Search"
+          id="inputBox"
+        />
+        <button id="searchbtn" onclick="search()" class="search-btn">
+          <img src="logoAndImages/search.png" alt="" />
+        </button>
+        <img
+          id="mic"
+          width="100%"
+          src="logoAndImages/microphone.png"
+          class="icon"
+          alt=""
+        />
+      </div>
+
+      <div class="user-options">
+        <img src="logoAndImages/video.png" class="icon" alt="" />
+        <img src="logoAndImages/grid.png" class="icon" alt="" />
+        <img src="logoAndImages/bell.png" class="icon" alt="" />
+
+        <div class="user-dp">
+          <img
+            src="https://yt3.ggpht.com/yti/APfAmoG4CpcObzBR1AeAwQva04Vk_ScZ6xa4GdonchhT=s88-c-k-c0x00ffffff-no-rj-mo"
+            alt=""
+          />
+        </div>
+      </div>
+    </nav>
+
+    <!-- <-------------- ending of navbar -------------->
+    -->
+
+    <!-- <-------------- starting of sidebar -------------->
+    -->
+
+    <div class="side-bar">
+      <a href="Youtube.html" class="links active"
+        ><img src="logoAndImages/home.png" alt="" />Home</a
+      >
+
+      <a href="Youtube.html" class="links"
+        ><img src="logoAndImages/explore.png" alt="" />Explore</a
+      >
+
+      <a href="Youtube.html" class="links"
+        ><img src="logoAndImages/subscription.png" alt="" />Subscription</a
+      >
+      <hr />
+      <a href="Youtube.html" class="links"
+        ><img src="logoAndImages/history.png" alt="" />History</a
+      >
+
+      <a href="Youtube.html" class="links"
+        ><img src="logoAndImages/your-video.png" alt="" />Your Videos</a
+      >
+      <a href="Youtube.html" class="links"
+        ><img src="logoAndImages/show more.png" alt="" />Show More</a
+      >
+      <hr />
+    </div>
+
+    <!-- <--------------  ending of sidebar -------------->
+    -->
+
+    <!-- <--------------  start of fliters -------------->
+    -->
+    <div class="filters">
+      <button onclick="search()" class="fliter-options active">All</button>
+      <button onclick="search()" class="fliter-options">JavaScript</button>
+      <button onclick="search()" class="fliter-options">Bollywood Music</button>
+      <button onclick="trending()" class="fliter-options">
+        Indian Pop Music
+      </button>
+      <button onclick="search()" class="fliter-options">Scene</button>
+      <button onclick="trending()" class="fliter-options">
+        Doctor Strange
+      </button>
+      <button onclick="search()" class="fliter-options">Web Series</button>
+      <button onclick="trending()" class="fliter-options">Trialers</button>
+      <button onclick="trending()" class="fliter-options">Comedy Food</button>
+      <button onclick="search()" class="fliter-options">Live</button>
+      <button onclick="search()" class="fliter-options">Gaming</button>
+    </div>
+
+    <div id="videosResults"></div>
+  </body>
+</html>
+<script src="Youtube.js"></script>
