@@ -15,8 +15,8 @@
   }
   
   .navbar {
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 60px;
     background: rgb(255, 253, 253);
@@ -38,8 +38,8 @@
     height: 2px;
     top: 45%;
     background: #8f8b8b;
+    transform: translateY((-50%));
     position: absolute;
-    transform: translateY((-45%));
   }
   
   .toggle-btn span:nth-child(1) {
@@ -173,10 +173,10 @@
     height: 60px;
     background: rgb(250, 248, 248);
     border-top: 1px solid #dfdada;
-    border-bottom: 1px solid #e0dbdb;
     padding: 0 20px;
-    display: flex;
     align-items: center;
+    border-bottom: 1px solid #f1ebeb;
+    display: flex;
     overflow-x: auto;
     overflow-y: hidden;
   }
