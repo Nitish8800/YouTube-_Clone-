@@ -30,8 +30,9 @@ async function search() {
     let inp = document.getElementById("inputBox").value;
     let div = document.getElementById("videosResults");
 
-    // let API = "AIzaSyD1mlwfUOxqSIqaBaQf00mnQRjj-aTl3qk";
-    let API = "AIzaSyCfMgi0nzYz_7DsuKWd46g-svsMbQcnpOE";
+
+    let API = "AIzaSyA266SPutTfCO63sLArqnx8Xi-UR51PSus";
+
 
     div.innerHTML = "";
     let res = await fetch(
@@ -83,8 +84,9 @@ async function trending() {
     let div = document.getElementById("videosResults");
     div.innerHTML = "";
 
-    // let API = "AIzaSyD1mlwfUOxqSIqaBaQf00mnQRjj-aTl3qk";
-    let API = "AIzaSyCfMgi0nzYz_7DsuKWd46g-svsMbQcnpOE";
+
+    let API = "AIzaSyA266SPutTfCO63sLArqnx8Xi-UR51PSus";
+
 
     let res = await fetch(
         `https://www.googleapis.com/youtube/v3/videos?part=snippet&maxResults=24&chart=mostPopular&regionCode=IN&key=${API}`
